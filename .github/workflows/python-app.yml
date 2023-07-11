@@ -30,6 +30,8 @@ jobs:
       with:
         name: python-artifact 3.8
         path: python_version_3.8.txt
+        
+    - uses: actions/checkout@v3
     - name: Extract python version 3.9
       uses: actions/setup-python@v3
       with:
@@ -39,8 +41,10 @@ jobs:
     - name: Upload Versions
       uses: actions/upload-artifact@v3
       with:
-        name: python-artifact 3.8
-        path: python_version_3.8.txt
+        name: python-artifact 3.9
+        path: python_version_3.9.txt
+        
+    - uses: actions/checkout@v3
     - name: Extract python version 3.10
       uses: actions/setup-python@v3
       with:
@@ -50,8 +54,8 @@ jobs:
     - name: Upload Versions
       uses: actions/upload-artifact@v3
       with:
-        name: python-artifact 3.8
-        path: python_version_3.8.txt
+        name: python-artifact 3.10
+        path: python_version_3.10.txt
       
     
 
